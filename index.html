@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><button id="mode">MODE</button></div>
+    <div class="main">
+        <div id="header">
+            <h1>CALCULATOR</h1>
+        </div>
+        <div id="mainScreen">
+            <input type="text"  value="" id="subVal" >
+            <input type="text" value="0" id="inputVal">
+        </div>
+        <div class="buttons">
+            <button onclick="modulus()">%</button>
+            <button onclick="C()">C</button>
+            <button onclick="removeLastDigit()">DEL</button>
+            <button onclick="getVal('/')">/</button>
+            <button onclick="getVal('7')">7</button>
+            <button onclick="getVal('8')">8</button>
+            <button onclick="getVal('9')">9</button>
+            <button onclick="getVal('*')">x</button>
+            <button onclick="getVal('4')">4</button>
+            <button onclick="getVal('5')">5</button>
+            <button onclick="getVal('6')">6</button>
+            <button onclick="getVal('-')">-</button>
+            <button onclick="getVal('1')">1</button>
+            <button onclick="getVal('2')">2</button>
+            <button onclick="getVal('3')">3</button>
+            <button onclick="getVal('+')">+</button>
+            <button>H</button>
+            <button onclick="getVal('0')">0</button>
+            <button onclick="getVal('.')">.</button>
+            <button onclick="solve()">=</button>
+        </div>
+        <div class="History">
+            <div id="header1">
+                <h1>HISTORY</h1>
+            </div>
+            <div id="hisDiv"></div>
+            </div>
+            <div id="clearHis">
+                <button id="clear" onclick="clearAll()">Clear ALL</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

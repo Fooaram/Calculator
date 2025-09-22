@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    max-width: 400px; 
+    margin: auto;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 8px;
+    text-align: center;
+}
+.main ,
+#header
+#mainScreen ,
+.buttons
+, #subVal , #inputVal ,
+button , #hisDiv,
+.History{
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+#subVal
+, #inputVal {
+    width: 100%;
+    height: 50px;
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: right;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background-color:darkgray;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+#hisDiv{
+    height: 150px;
+    background-color: antiquewhite;
+    text-align: left;
+}
+#clear{
+   height: 40px;
+}
+@media (max-width: 480px) {
+  #subVal, #inputVal {
+    height: 40px;
+    font-size: 1rem;
+  }
+
+ button {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+#clear {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+button:active {
+  animation: bounceClick 0.3s ease;
+}
+
+@keyframes bounceClick {
+  0%   { transform: scale(1);background-color: aqua; }
+  50%  { transform: scale(0.85);background-color: aqua; }
+  100% { transform: scale(1);background-color: aqua; }
+}
+
+#mode{
+  height: 50px;
+  width: 150px;
+ 
+}
+
+
+
