@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div><button id="mode">MODE</button></div>
+    <div class="Screen">
+        
     <div class="main">
         <div id="header">
             <h1>CALCULATOR</h1>
@@ -33,22 +34,26 @@
             <button onclick="getVal('2')">2</button>
             <button onclick="getVal('3')">3</button>
             <button onclick="getVal('+')">+</button>
-            <button>H</button>
+            <button onclick="toggleHistory()">H</button>
             <button onclick="getVal('0')">0</button>
             <button onclick="getVal('.')">.</button>
             <button onclick="solve()">=</button>
         </div>
+    </div>
         <div class="History">
             <div id="header1">
                 <h1>HISTORY</h1>
             </div>
             <div id="hisDiv"></div>
-            </div>
+        
             <div id="clearHis">
                 <button id="clear" onclick="clearAll()">Clear ALL</button>
             </div>
         </div>
     </div>
+    </div>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
